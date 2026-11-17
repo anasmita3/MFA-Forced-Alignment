@@ -1,0 +1,29 @@
+MONTREAL FORCED ALIGNER (MFA) - COMMANDS USED
+
+1. Activate the Conda environment
+conda activate aligner
+
+2. Check MFA installation
+mfa version
+
+3. Download the English pronunciation dictionary
+mfa model download dictionary english_us_arpa
+
+4. Download the English acoustic model
+mfa model download acoustic english_us_arpa
+
+5. Validate the prepared corpus
+mfa validate ~/Speech_Assignment/Assignment_2a/corpus english_us_arpa
+
+6. Perform forced alignment
+mfa align \
+~/Speech_Assignment/Assignment_2a/corpus \
+english_us_arpa \
+english_us_arpa \
+~/Speech_Assignment/Assignment_2a/outputs
+
+7. Alignment output
+The output directory contains the generated TextGrid files and alignment_analysis.csv.
+
+8. Visualization
+The generated TextGrid files were opened alongside their corresponding audio files in Praat for visual inspection of word and phoneme boundaries.

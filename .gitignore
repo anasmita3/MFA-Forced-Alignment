@@ -1,0 +1,11 @@
+# Original dataset - do not publish
+Audio/
+TextGrids/*.TXT
+TextGrids/*.txt
+
+# Temporary and system files
+*.wav
+*.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
