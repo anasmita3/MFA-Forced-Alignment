@@ -1,80 +1,52 @@
-# Forced Alignment Using Montreal Forced Aligner (MFA)
+# Speech Processing and Emotion Recognition
 
-## 1. Project Overview
-This project performs forced alignment of English speech recordings with their corresponding transcripts using the Montreal Forced Aligner (MFA).
+This repository contains two assignments related to speech processing and deep learning.
 
-Forced alignment identifies the time boundaries of words and phonemes in an audio recording when the transcript is already known.
+## Assignment 1: Forced Alignment using Montreal Forced Aligner
 
-## 2. Tools and Models
-- Montreal Forced Aligner (MFA) 3.4.3
-- Python / Conda environment
+Objective: Align English speech recordings with their corresponding transcripts using Montreal Forced Aligner (MFA).
+
+Tools:
+- Montreal Forced Aligner 3.4.3
 - English US ARPA pronunciation dictionary
 - English US ARPA acoustic model
-- Praat for visualization and inspection
+- Praat
 
-## 3. Dataset Preparation
-The dataset contains six audio recordings and their corresponding transcript files.
+Contents:
+- Scripts: Alignment commands and reproducibility script
+- TextGrids: Generated word and phoneme alignments
+- Praat_Pictures: Alignment visualizations
+- Report: Technical report and alignment analysis
 
-Each audio file is paired with a transcript having the same filename.
+See the Assignment 1 README inside Assignment_1_Forced_Alignment.
 
-Audio format:
-- WAV
-- Mono channel
-- 16 kHz sampling rate
-- 16-bit PCM
+## Assignment 2: Multimodal Emotion Recognition
 
-The files were organized into an MFA-compatible corpus structure.
+Objective: Build and compare three emotion recognition systems:
+1. Speech-only
+2. Text-only
+3. Multimodal speech and text
 
-## 4. Installation
-Create and activate the Conda environment:
+Dataset: Toronto Emotional Speech Set (TESS).
 
-    conda create -n aligner python=3.10
-    conda activate aligner
+Proposed project components:
+- Speech preprocessing, feature extraction and temporal modelling
+- Text preprocessing, feature extraction and contextual modelling
+- Multimodal fusion and emotion classification
+- Evaluation, comparison and visualisation
 
-Install MFA:
+Contents:
+- models: Speech, text and fusion pipelines
+- Results: Accuracy tables and plots
+- Report: Technical report and analysis
 
-    conda install -c conda-forge montreal-forced-aligner
+## Repository Structure
 
-Download the required models:
+Assignment_1_Forced_Alignment/
+Assignment_2_Emotion_Recognition/
+README.md
 
-    mfa model download dictionary english_us_arpa
-    mfa model download acoustic english_us_arpa
+## Notes
 
-## 5. Validation and Alignment
-
-Validate the corpus:
-
-    mfa validate CORPUS_PATH english_us_arpa
-
-Run forced alignment:
-
-    mfa align CORPUS_PATH english_us_arpa english_us_arpa OUTPUT_PATH
-
-## 6. Results
-The alignment generated six TextGrid files and an alignment_analysis.csv file.
-
-Each TextGrid contains:
-- A words tier showing word-level intervals
-- A phones tier showing phoneme-level intervals
-
-## 7. Visualization and Inspection
-The TextGrid files were opened with their corresponding audio recordings in Praat.
-
-The word and phoneme boundaries were visually inspected to observe timing, segmentation, and possible alignment mismatches.
-
-## 8. Repository Structure
-
-    MFA_Final_Submission/
-    ├── Audio/
-    ├── TextGrids/
-    ├── Praat_Pictures/
-    ├── Scripts/
-    │   ├── MFA_commands.txt
-    │   └── run_alignment.sh
-    ├── Report/
-    └── README.md
-
-## 9. Reproducibility
-Place the provided WAV and transcript files in an MFA-compatible corpus directory before running the commands.
-
-The original dataset is not included in this repository. Use the dataset provided with the assignment.
+Original dataset files are not included in this repository.
+Implementation details and results will be documented in the respective assignment folders.

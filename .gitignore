@@ -9,3 +9,21 @@ TextGrids/*.txt
 Thumbs.db
 __pycache__/
 *.pyc
+
+# Assignment 2 - original dataset and generated audio features
+Assignment_2_Emotion_Recognition/dataset/
+Assignment_2_Emotion_Recognition/Results/audio_features/
+Assignment_2_Emotion_Recognition/Results/audio_features.zip
+
+# Model checkpoints and large binary weights
+*.pth
+*.pt
+*.ckpt
+
+# Python environments
+venv/
+.venv/
+
+# Assignment 1 - original transcript files
+Assignment_1_Forced_Alignment/TextGrids/*.TXT
+Assignment_1_Forced_Alignment/TextGrids/*.txt
