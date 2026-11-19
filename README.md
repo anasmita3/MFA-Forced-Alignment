@@ -49,4 +49,4 @@ README.md
 ## Notes
 
 Original dataset files are not included in this repository.
-Implementation details and results will be documented in the respective assignment folders.
+Implementation details and results are documented in the respective assignment folders.
