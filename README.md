@@ -1,4 +1,4 @@
-# Speech Processing and Emotion Recognition
+# Assignment: LTRC, IIIT Hyderabad
 
 This repository contains two assignments related to speech processing and deep learning.
 
